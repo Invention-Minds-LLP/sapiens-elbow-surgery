@@ -1549,6 +1549,7 @@ video {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: center;
     }
 
     .icon-2 {

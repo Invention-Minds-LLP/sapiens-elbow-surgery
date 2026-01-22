@@ -6,6 +6,7 @@ import { Footer } from "../footer/footer";
 import { ContactForm } from "../contact-form/contact-form";
 import { Route, Router } from '@angular/router';
 import { CallBackForm } from "../call-back-form/call-back-form";
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home-page',
@@ -16,7 +17,12 @@ import { CallBackForm } from "../call-back-form/call-back-form";
 export class HomePage {
   @ViewChild('subNavScroll') subNavScroll!: ElementRef;
 
-    @Input() menuOpen = false;
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+  ) { }
+
+  @Input() menuOpen = false;
 
 
   isStuck = false;
@@ -39,6 +45,15 @@ export class HomePage {
 
   ngOnInit(): void {
     this.observeSubNav();
+
+    this.titleService.setTitle(
+      'Elbow Surgery in Malleshwaram Bangalore | Sapiens Clinic'
+    );
+
+    this.metaService.updateTag({
+      name: 'description',
+      content: 'Expert elbow surgery in Malleshwaram, Bangalore by Dr. Darshan Kumar A. Jain. Advanced treatment for elbow pain, stiffness, injuries at Sapiens Clinic.'
+    });
   }
 
 

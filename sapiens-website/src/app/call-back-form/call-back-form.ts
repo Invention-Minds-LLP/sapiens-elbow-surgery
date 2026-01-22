@@ -20,23 +20,12 @@ export class CallBackForm {
   isSubmitting: boolean = false;
   submitted: boolean = false;
   constructor(
-    private titleService: Title,
-    private metaService: Meta,
     private fb: FormBuilder
   ) { }
 
 
 
   ngOnInit(): void {
-    this.titleService.setTitle(
-      ''
-    );
-
-    this.metaService.updateTag({
-      name: 'description',
-      content: ''
-    });
-
     this.initForm();
     this.fetchUserLocation();
   }
