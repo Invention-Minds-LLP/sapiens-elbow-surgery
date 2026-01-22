@@ -1,0 +1,154 @@
+/* Main Navigation Component CSS (nav-bar.component.css) */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* LOGO */
+.nav-bar-brand img {
+    max-height: 60px;
+    z-index: 3000;
+}
+
+.nav-bar-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-icon {
+    width: 42.806px;
+    height: 42.806px;
+    border: 2px solid #EF7F1A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-heading {
+    color: var(--Navy-blue, #001F3F);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+a{
+    text-decoration: none;
+    color: #808080;
+}
+.icon-subheading {
+    color: #808080;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 3000;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #222;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.side-menu {
+    position: fixed;
+    top: 85px;
+    right: -120%;
+    width: 320px;
+    height: calc(100vh - 80px);
+    background: white;
+    padding: 20px;
+    box-shadow: -6px 0 5px rgba(0, 0, 0, 0.25);
+    transition: right 0.35s ease;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        padding: 10px 20px;
+    }
+
+    .nav-bar > .desktop-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-bar-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .side-menu.open {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .side-menu {
+        width: 100%;
+        top: 83px;
+    }
+
+    .link-item {
+        justify-content: flex-start;
+    }
+
+    .nav-bar-links {
+        margin-left: 10%;
+    }
+}

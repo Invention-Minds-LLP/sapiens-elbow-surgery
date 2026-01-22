@@ -1,0 +1,502 @@
+<app-nav-bar (menuState)="menuOpen = $event"></app-nav-bar>
+
+<div class="home-page-container">
+    <div class="banner-part">
+        <div class="banner">
+            <img src="/imgs/banar.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="banner-info">
+        <div class="header">
+            <div class="banner-heading">Elbow <span>Surgery</span> </div>
+            <div class="banner-subheading">in Malleshwaram, Bangalore</div>
+        </div>
+
+        <div class="banner-content">
+            <div class="banner-details">
+                <div class="banner-para">Expert elbow evaluation and surgical care by <span>Dr. Darshan Kumar A.
+                        Jain</span>, Orthopedic Hand & Upper-Limb Specialist</div>
+            </div>
+
+            <div class="banner-form-part">
+                <!-- <div class="banner-form" id="book"></div> -->
+                <app-contact-form id="book"></app-contact-form>
+                <div class="banner-btn">
+                    <button (click)="scrollTo('contact')">book an appointment</button>
+                </div>
+
+
+                <div class="banner-video">
+                    <video autoplay muted loop>
+                        <source src="/imgs/doc_slide_Dr. Naneboena Sunitha.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="content-part">
+        <div class="sub-nav-wrapper">
+            <!-- Left Arrow -->
+            <button class="nav-arrow nav-arrow-left" (click)="scrollLeft()"  *ngIf="!menuOpen">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+            </button>
+
+            <!-- Sub Navigation -->
+            <div class="sub-nav" [class.stuck]="isStuck">
+                <div class="sub-nav-scroll" #subNavScroll>
+                    <ul>
+                        <li class="li-1 active" (click)="scrollTo('elbow')">Elbow Surgery</li>
+                        <li class="li-2" (click)="scrollTo('doctor')">Doctor</li>
+                        <li class="li-2" (click)="scrollTo('procedure')">Procedure</li>
+                        <li class="li-2" (click)="scrollTo('treatment')">Treatment</li>
+                        <li class="li-2" (click)="scrollTo('faqs')">FAQs</li>
+                        <li class="li-3" (click)="scrollTo('contact')">Contact us</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button class="nav-arrow nav-arrow-right" (click)="scrollRight()"  *ngIf="!menuOpen">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="surgery-part">
+            <div class="surgery-header">
+                <div class="right-line"><svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
+                        viewBox="0 0 441 1" fill="none">
+                        <path d="M-25 0.5H441" stroke="#E7554C" />
+                    </svg></div>
+                <div class="surgery-heading">Understanding Elbow Surgery</div>
+                <div class="left-line"><svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
+                        viewBox="0 0 443 1" fill="none">
+                        <path d="M0 0.5H466" stroke="#E7554C" />
+                    </svg></div>
+            </div>
+
+            <div class="ml" id="elbow">
+                <div class="surgery-sub-heading">What Is Elbow Surgery?</div>
+                <div class="" style="display: flex; justify-content: center;">
+                    <div class="surgery-container" [class.expanded]="isExpanded">
+                        <div class="surgery-para">
+                            <div class="para-1">
+                                Elbow Surgery Is A Medical Procedure Performed To Treat Conditions That Cause Persistent
+                                Elbow
+                                Pain, Stiffness, Instability, Or Restricted Movement. The Goal Of Elbow Surgery Is To
+                                Reduce
+                                Pain, Improve Elbow Joint Movement, And Help Restore Normal Arm Function.
+                            </div>
+
+                            <div class="para-2" [class.show]="isExpanded">
+                                Depending On The Condition, Elbow Surgery May Involve Repairing Damaged Tissues,
+                                Relieving
+                                Pressure On Nerves, Or Correcting Joint Alignment. Not All Elbow Problems Need Surgery -
+                                Careful
+                                Evaluation Is Always The First Step.
+                            </div>
+                        </div>
+
+
+                        <button class="toggle-btn" (click)="toggleExpand()">
+                            <svg class="arrow-icon" [class.rotated]="isExpanded" xmlns="http://www.w3.org/2000/svg"
+                                width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                <path
+                                    d="M7.89629 8.72651L16.2335 17.0637L10.597 17.0629L10.5974 18.2592L17.6617 18.2592L18.246 18.2459L18.2593 17.6617L18.2593 10.5973L17.0642 10.5973L17.0646 16.2326L8.72739 7.89541L7.89629 8.72651Z"
+                                    fill="#E7554C" />
+                            </svg>
+                            <span>{{ isExpanded ? 'Read Less' : 'Read More' }}</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="symptoms-part">
+            <div class="">
+                <div class="symptoms-heading">Symptoms - When to Visit Sapiens Clinic</div>
+                <div class="flex">
+                    <div class="">
+                        <div class="symptoms-subheading">You should consider consulting an elbow surgeon if you
+                            experience:
+                        </div>
+                        <ul class="symptoms-list">
+                            <li>Persistent elbow pain or tenderness</li>
+                            <li>Stiffness or reduced bending and straightening</li>
+                            <li>Swelling around the elbow joint</li>
+                            <li>Weakness or difficulty lifting objects</li>
+                            <li>Pain during work, sports, or routine arm movements</li>
+                        </ul>
+                    </div>
+
+                    <img src="imgs/woman-having-elbow-ache-due-to-lateral-epicondylit-2026-01-08-06-45-17-utc 1.png"
+                        alt="" class="img-1">
+                    <img src="imgs/midsection-doctor-examining-male-patient 1.png" alt="" class="img-2">
+
+                </div>
+                <div class="symptoms-sub-para">A timely consultation with Dr. Darshan Kumar A. Jain, an experienced
+                    orthopedic surgeon in Malleshwaram, Bangalore, Karnataka, can help determine the right elbow pain
+                    treatment before the condition worsens.</div>
+            </div>
+        </div>
+
+        <div class="surgery-for">
+            <div class="surgery-icons">
+                <img src="imgs/Physical Therapy.png" alt="" class="icon-1">
+                <img src="imgs/Arm Massage Area.png" alt="" class="icon-2">
+                <img src="imgs/Pill.png" alt="" class="icon-3">
+            </div>
+
+            <div class="surgery-for-content">
+                <div class="symptoms-heading">Who Is This Surgery For?</div>
+                <div class="symptoms-subheading">Elbow surgery may be considered for patients who:</div>
+                <ul class="symptoms-list">
+                    <li>Have long-standing elbow pain not improving with medication or physiotherapy</li>
+                    <li>Experience restricted elbow movement affecting daily activities</li>
+                    <li>Have elbow joint instability, deformity, or repeated injuries</li>
+                    <li>Are diagnosed with structural elbow damage on X-rays or MRI scans</li>
+                    <li>Have work or lifestyle demands requiring stable elbow function</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="doctor-card" id="doctor">
+            <div class="doctor-img">
+                <div class="bg-glow"></div>
+
+                <div class="box-1">
+                    <div class="box-2">
+                        <img src="imgs/Dr. Darshan Kumar A. Jain Photo 2 2.png" alt="Doctor">
+                    </div>
+                </div>
+            </div>
+
+            <div class="doctor-content">
+                <div class="doctor-heading">Dr. Darshan Kumar A. Jain</div>
+
+                <ul class="doctor-list">
+                    <div class="fl">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17"
+                                fill="none">
+                                <path d="M1 8.5L3.5 6L8.5 11L18.5 1L21 3.5L8.5 16L1 8.5Z" stroke="black"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></li>
+                        <li class="list"><span>15+ years</span> of experience in orthopedic and upper-limb surgery</li>
+                    </div>
+                    <div class="fl">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17"
+                                fill="none">
+                                <path d="M1 8.5L3.5 6L8.5 11L18.5 1L21 3.5L8.5 16L1 8.5Z" stroke="black"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></li>
+                        <li class="list"><span>5000+ patients</span> treated across hand, wrist, and nerve conditions
+                        </li>
+                    </div>
+                    <div class="fl">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17"
+                                fill="none">
+                                <path d="M1 8.5L3.5 6L8.5 11L18.5 1L21 3.5L8.5 16L1 8.5Z" stroke="black"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></li>
+                        <li class="list">Specialized focus on <span>peripheral nerve repair</span> and
+                            <span>microsurgery</span>
+                        </li>
+                    </div>
+                    <div class="fl">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17"
+                                fill="none">
+                                <path d="M1 8.5L3.5 6L8.5 11L18.5 1L21 3.5L8.5 16L1 8.5Z" stroke="black"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></li>
+                        <li class="list">Trusted for ethical, patient-first care</li>
+                    </div>
+                </ul>
+
+                <div class="doctor-card-btns">
+                    <button class="btn" (click)="goToDoctor()">View Profile</button>
+                    <button class="btn" (click)="scrollTo('contact')">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="perform-part">
+            <div class="surgery-header">
+                <div class="right-line"><svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
+                        viewBox="0 0 441 1" fill="none">
+                        <path d="M-25 0.5H441" stroke="#E7554C" />
+                    </svg></div>
+                <div class="surgery-heading">Elbow Surgery Procedure</div>
+                <div class="left-line"><svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
+                        viewBox="0 0 443 1" fill="none">
+                        <path d="M0 0.5H466" stroke="#E7554C" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="perform-content">
+                <div class="cards">
+                    <div class="perform-card" *ngFor="let card of performCard">
+                        <img [src]="card.img" alt="">
+                        <div class="card-info">
+                            <div class="card-heading">{{card.heading}}</div>
+                            <div class="card-para">{{card.para}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="procedure-part" id="procedure">
+            <div class="surgery-header">
+                <div class="right-line"><svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
+                        viewBox="0 0 441 1" fill="none">
+                        <path d="M-25 0.5H441" stroke="#E7554C" />
+                    </svg></div>
+                <div class="surgery-heading"> Elbow Surgery Procedure</div>
+                <div class="left-line"><svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
+                        viewBox="0 0 443 1" fill="none">
+                        <path d="M0 0.5H466" stroke="#E7554C" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="surgery-sub-heading wi">How the Treatment Is Planned & Performed</div>
+
+            <div class="video-section">
+                <div class="box-video">
+                    <video autoplay muted loop>
+                        <source src="/imgs/elbow_1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="procedure-card card-5">
+                        <div class="procedure-header">
+                            <div class="heading">Rehabilitation & Follow-Up</div>
+                            <img src="imgs/icon-5.png" alt="">
+                        </div>
+
+                        <div class="para">Physiotherapy is advised to gradually restore elbow movement and strength.
+                            Follow-ups help track healing and recovery progress.</div>
+                    </div>
+                </div>
+                <div class="procedure-cards">
+                    <div class="procedure-card card-1">
+                        <div class="procedure-header">
+                            <div class="heading">Clinical Evaluation</div>
+                            <img src="imgs/icon-1.png" alt="">
+                        </div>
+
+                        <div class="para">The process begins with a detailed consultation, physical examination, and
+                            imaging tests such as X-rays or MRI to identify the cause of elbow pain or stiffness.</div>
+                    </div>
+                    <div class="procedure-card card-2">
+                        <div class="procedure-header">
+                            <div class="heading">Treatment Planning</div>
+                            <img src="imgs/icon-2.png" alt="">
+                        </div>
+
+                        <div class="para">Based on findings, the surgeon explains whether elbow surgery is required and
+                            discusses the most suitable approach.</div>
+                    </div>
+                    <div class="procedure-card card-3">
+                        <div class="procedure-header">
+                            <div class="heading">Surgical Procedure</div>
+                            <img src="imgs/icon-3.png" alt="">
+                        </div>
+
+                        <div class="para">Elbow surgery may involve repairing damaged tissues, relieving joint pressure,
+                            or correcting structural problems. Procedures are performed under regional or general
+                            anesthesia for patient comfort.</div>
+                    </div>
+                    <div class="procedure-card card-4">
+                        <div class="procedure-header">
+                            <div class="heading">Post-Surgery Care</div>
+                            <img src="imgs/icon-4.png" alt="">
+                        </div>
+
+                        <div class="para">After surgery, the arm may be supported with a sling or brace. Pain control
+                            and wound care are closely monitored.</div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="signs-part" id="treatment">
+            <div class="surgery-header">
+                <div class="right-line"><svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
+                        viewBox="0 0 441 1" fill="none">
+                        <path d="M-25 0.5H441" stroke="#E7554C" />
+                    </svg></div>
+                <div class="surgery-heading">Understand the Signs</div>
+                <div class="left-line"><svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
+                        viewBox="0 0 443 1" fill="none">
+                        <path d="M0 0.5H466" stroke="#E7554C" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="sign-heading">Plan the Right Elbow Treatment</div>
+
+
+            <div class="">
+                <div class="sign-sub-heading">Common Conditions Treated with Elbow Surgery</div>
+                <div class="sign-card-part">
+                    <div class="sign-cards" style="margin-top: 20px;">
+                        <div class="sign-card">
+                            <ul>
+                                <li>Tennis elbow and golfer’s elbow</li>
+                                <li>Elbow stiffness or contracture</li>
+                                <li>Elbow ligament injuries</li>
+                                <li>Elbow fractures or post-injury complications</li>
+                                <li>Nerve compression around the elbow</li>
+                            </ul>
+                        </div>
+
+                        <div class="sign-img-box">
+                            <img src="imgs/signs-img-1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex1">
+                        <div class="sign-sub-heading">Benefits of Modern Elbow Surgery</div>
+                        <div class="sign-cards">
+                            <div class="sign-img-box">
+                                <img src="imgs/signs-img-2.png" alt="">
+                            </div>
+
+                            <div class="sign-card">
+                                <ul>
+                                    <li>Improved elbow comfort and joint mobility</li>
+                                    <li>Targeted elbow treatment using precise techniques</li>
+                                    <li>Better pain control with structured recovery care</li>
+                                    <li>Guided return to daily activities and work</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="sign-bottom-content">
+                <div class="bottom-heading">How Elbow Surgery Is Performed</div>
+                <div class="bottom-para">Elbow surgery uses carefully planned techniques based on the condition. The
+                    surgeon treats affected elbow structures while preserving healthy tissues, supporting safer
+                    procedures and better recovery outcomes.</div>
+            </div>
+        </div>
+
+        <div class="why-choose-section">
+            <div class="">
+                <div class="choose-header">
+                    <div class="choose-heading">Why Choose</div>
+                    <div class="choose-sub-heading">Sapiens Clinic?</div>
+                </div>
+
+                <div class="choose-list">
+                    <ol>
+                        <li>
+                            <div class="list-heading">Ethical Treatment Approach</div>
+                            <div class="list-para">Elbow treatment decisions guided by clinical need, never pressure.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-heading">Thorough Evaluation</div>
+                            <div class="list-para">Each elbow condition is carefully assessed before surgery.</div>
+                        </li>
+                        <li>
+                            <div class="list-heading">Expert-Led Care</div>
+                            <div class="list-para">Dr. Darshan Kumar A. Jain ensures clarity and ethical
+                                decision-making.</div>
+                        </li>
+                        <li>
+                            <div class="list-heading">Continuity of Care</div>
+                            <div class="list-para">Patients receive consistent guidance from consultation through
+                                recovery at our clinic in Malleshwaram, Bangalore, Karnataka.</div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="choose-img">
+                <img src="imgs/clinic-img.png" alt="">
+            </div>
+        </div>
+
+        <!-- <div class="contact-part" id="contact">
+            <img src="imgs/contact-img.png" alt="">
+
+            <div class="contact-info">
+                <div class="contact-heading">could not find what you are looking for?</div>
+                <div class="contact-sub-heading">request a callback</div>
+
+                <form [formGroup]="callbackForm" (ngSubmit)="submit()">
+
+                    <input type="text" formControlName="name" placeholder="Enter your name" class="contact-input">
+
+                    <input type="tel" formControlName="phone" placeholder="Enter your phone number"
+                        class="contact-input">
+
+                    <button type="submit" class="contact-btn">
+                        Submit
+                    </button>
+
+                </form>
+            </div>
+        </div> -->
+
+        <app-call-back-form id="contact"></app-call-back-form>
+
+
+        <div class="faqs-part" id="faqs">
+            <div class="faqs">
+                <div class="faq-item" *ngFor="let faq of faqs; let i = index">
+                    <div class="faq-question" (click)="toggleFAQ(i)" [class.active]="activeIndex === i">
+                        <div class="step-col">
+                            <div class="step-number" [class.active]="activeIndex === i">
+                                {{ (i + 1) < 10 ? '0' + (i + 1) : (i + 1) }} </div>
+                            </div>
+                            <span class="q-text">{{ faq.question }}</span>
+
+                            <span class="icon" [class.active]="activeIndex === i">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </span>
+
+                        </div>
+
+                        <div class="faq-answer" [class.open]="activeIndex === i">
+                            {{ faq.answer }}
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Round FAQ Badge -->
+                <div class="faq-round-1">
+                    <div class="faq-round-2">
+                        <div class="faq-name">FAQs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <app-footer></app-footer>
+    </div>

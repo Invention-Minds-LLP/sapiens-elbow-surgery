@@ -1,0 +1,238 @@
+.footer-part {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+}
+
+.part-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.part-1 img {
+    width: 211px;
+    height: 117px;
+    border-radius: 18px;
+}
+
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-icon {
+    width: 42.806px;
+    height: 42.806px;
+    border: 2px solid #EF7F1A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-heading {
+    color: var(--Navy-blue, #001F3F);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.icon-subheading {
+    color: #808080;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
+}
+
+.part-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.doctor-name {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 20px;
+    background: #B2EAFF;
+    padding: 20px;
+    width: 308px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+}
+
+.doctor-qualification {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 500px;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.book-btn {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    padding: 5px 26px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #EF7F1A 0%, #FFD466 100%);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.view-btn {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    padding: 5px 26px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 10px;
+    border: 2px solid #EF7F1A;
+    cursor: pointer;
+    background: transparent;
+}
+
+.part-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.location {
+    display: flex;
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 362px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #FFFFFF;
+}
+
+.bottom ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.bottom ul li {
+    color: #E7554C;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.copy-rights {
+    color: #E7554C;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+a{
+    text-decoration: none;
+    color: #808080;
+}
+
+@media(max-width:767px){
+
+    .footer-part{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .doctor-name{
+        font-size: 16px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+    }
+    .doctor-qualification{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .btns{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .part-3{
+        align-items: center;
+    }
+
+    .bottom ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .location{
+        font-size: 12px;
+    }
+}

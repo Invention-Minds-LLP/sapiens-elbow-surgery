@@ -1,0 +1,1835 @@
+.home-page-container {
+    padding-top: 80px;
+    overflow: hidden;
+    background: #FFF9EB;
+    margin-bottom: 50px;
+}
+
+.banner-part img {
+    width: 100%;
+    height: 690px;
+
+}
+
+
+.banner-info {
+    position: absolute;
+    left: 225px;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.banner-heading {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Rubik;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-heading span {
+    color: #E7554C;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rubik;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-subheading {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    /* 175% */
+}
+
+.banner-para {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* width: 658px; */
+    /* 155.556% */
+    border-radius: 4px;
+    background: #FFF;
+    /* filter: blur(1.850000023841858px); */
+    width: 679px;
+    height: 79px;
+    padding: 10px;
+}
+
+.banner-para span {
+    color: #E7554C;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.banner-content {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-form-part {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.banner-form-part button {
+    display: flex;
+    /* padding: 18px 45px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 283px;
+    height: 64px;
+    border-radius: 4px;
+    border: 1px solid #E7554C;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 140% */
+    text-transform: uppercase;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+
+.banner-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.banner-form {
+    display: flex;
+    width: 329px;
+    height: 300px;
+    padding: 18px 21px 31px 21px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #FFF5DB 0%, #EF811C 100%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.banner-video video {
+    width: 388px;
+    height: 232px;
+    aspect-ratio: 68/39;
+    border-radius: 40px;
+    border: 16px solid #E6534B;
+}
+
+
+
+/* Sub Navigation Container */
+.sub-nav-wrapper {
+    width: 90%;
+    max-width: 1369px;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Sub Navigation - Sticky below main nav */
+.sub-nav {
+    width: 100%;
+    height: 73px;
+    border-radius: 50px;
+    background: rgba(255, 230, 164, 0.29);
+    box-shadow: 0 4px 4px 0 #FFD466;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 80px;
+    /* Sticks just below the fixed main navbar */
+    z-index: 999;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Enhanced style when sub-nav is stuck */
+.sub-nav.stuck {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Navigation list wrapper */
+.sub-nav-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-nav-scroll::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.sub-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.sub-nav ul li {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    padding: 12px 28px;
+    border-radius: 50px;
+    background: transparent;
+}
+
+.sub-nav .symptoms-heading {
+    color: #E7554C;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sub-nav li:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Active/Selected state */
+/* ul li.active {
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(270deg, #FFD567 4.43%, #E6534B 99.95%);
+    color: white !important;
+    box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+} */
+
+.li-1 {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rubik;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.li-2 {
+    color: #D09600;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.li-3 {
+    color: #E7554C;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+/* Arrow Navigation Buttons - Pill Style */
+.nav-arrow {
+    display: none;
+    /* Hidden on desktop */
+    min-width: 45px;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.nav-arrow:hover {
+    background: #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-arrow:active {
+    transform: scale(0.95);
+}
+
+/* .nav-arrow.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+} */
+
+.nav-arrow svg {
+    width: 24px;
+    height: 24px;
+    fill: #333;
+    transition: fill 0.3s ease;
+}
+
+
+.nav-arrow:hover svg {
+    fill: #E6534B;
+}
+
+.ml {
+    padding: 20px 130px;
+}
+
+
+
+.surgery-sub-heading {
+    color: #E7554C;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* margin: 20px 130px 0; */
+
+}
+
+
+.content-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.surgery-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.surgery-heading {
+    color: #E7554C;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rubik;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+
+.surgery-container {
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    height: auto;
+    padding: 22px 76px 23px 39px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 17px;
+    border-radius: 20px;
+    border: 1px solid #E7554C;
+    background: #FFF;
+    transition: all 0.3s ease;
+
+}
+
+
+.surgery-para {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+    text-transform: capitalize;
+}
+
+.para-1 {
+    margin-bottom: 0;
+}
+
+.para-2 {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+    margin-top: 0;
+}
+
+.para-2.show {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+    background: #f5f5f5;
+}
+
+/* Arrow Icon Styles */
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    transform: rotate(90deg);
+    /* Default: pointing down */
+}
+
+.arrow-icon.rotated {
+    transform: rotate(-90deg);
+    /* When expanded: pointing up */
+}
+
+.symptoms-part {
+    width: 100%;
+    height: auto;
+    padding: 20px 130px;
+    background: #FEE197;
+    box-shadow: 0 4px 15.5px 6px rgba(0, 0, 0, 0.25);
+}
+
+.symptoms-heading {
+    color: #E7554C;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.symptoms-subheading {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.symptoms-sub-para {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    text-transform: capitalize;
+    /* width: 1217px; */
+}
+
+.symptoms-list {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 100% */
+    text-transform: capitalize;
+    margin-left: 40px;
+}
+
+.flex {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 60px;
+    /* flex-wrap: wrap; */
+}
+
+.img-2 {
+    margin-top: 120px;
+}
+
+.surgery-for {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.surgery-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.icon-2 {
+    margin-left: 150px;
+}
+
+.doctor-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 40px;
+    width: 100%;
+    /* height: auto; */
+    background: #FFF;
+    overflow: hidden;
+    /* box-shadow: 4px 4px 10px 6px rgba(0, 0, 0, 0.25); */
+}
+
+.fl {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.doctor-img {
+    position: relative;
+    width: 430px;
+    height: 430px;
+}
+
+
+.box-1 {
+    width: 100%;
+    height: 100%;
+    border: 8px solid #FFD466;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(8deg);
+}
+
+.box-2 {
+    width: 100%;
+    height: 100%;
+    border: 8px solid #E7554C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-16deg);
+}
+
+
+.box-2 img {
+    width: 320px;
+    height: auto;
+    object-fit: cover;
+    transform: rotate(8deg);
+    /* cancels parent rotation so image stays straight */
+    z-index: 2;
+}
+
+
+.doctor-heading {
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rubik;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150px;
+    /* 312.5% */
+    background: linear-gradient(90deg, #E45249 0%, #B22726 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.doctor-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.doctor-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.doctor-card-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.bg-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 427px;
+    background: rgba(231, 85, 76, 0.80);
+    filter: blur(105.55000305175781px);
+    /* filter: blur(80px); */
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+/* Keep frames above glow */
+.box-1,
+.box-2,
+.box-2 img {
+    position: relative;
+    z-index: 1;
+}
+
+.box-1 {
+    transform: rotate(8deg);
+    transition: transform 0.4s ease;
+}
+
+.box-2 {
+    transform: rotate(-16deg);
+    transition: transform 0.4s ease;
+}
+
+.doctor-img:hover .box-1 {
+    transform: rotate(12deg);
+}
+
+.doctor-img:hover .box-2 {
+    transform: rotate(-20deg);
+}
+
+.list {
+    color: #E7554C;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.list span {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 87.5% */
+}
+
+.btn {
+    display: flex;
+    width: 283px;
+    height: 38px;
+    padding: 18px 45px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid #E7554C;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: #E7554C;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Koulen;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 116.667% */
+    cursor: pointer;
+}
+
+.perform-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #FFF;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+}
+
+.cards {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.perform-card {
+    width: 300px;
+    height: 384px;
+    border-radius: 4px;
+    background: #E7554C;
+    box-shadow: 0 4px 16.6px -2px #835FCD;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-heading {
+    color: #FFD466;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* width: 222px; */
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-para {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    text-transform: capitalize;
+}
+
+.procedure-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.video-section {
+    display: flex;
+    /* align-items: center; */
+    margin-top: 60px;
+}
+
+.procedure-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.box-video {
+    width: 533px;
+    height: 533px;
+    border-radius: 20px;
+    border: 3px solid #E7554C;
+}
+
+video {
+    width: 594px;
+    height: 598px;
+    aspect-ratio: 297/299;
+    border-radius: 20px;
+    border: 1px solid #E6534B;
+    box-shadow: 0 4px 20px -1px #8360CE;
+    object-fit: cover;
+    margin: 40px 0 0 50px;
+}
+
+.procedure-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.procedure-header img {
+    width: 47px;
+    height: 47px;
+}
+
+
+.procedure-card {
+    width: 504px;
+    height: auto;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    position: relative;
+
+}
+
+.heading {
+    color: #E7554C;
+    text-align: right;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 150% */
+}
+
+.para {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.card-1 {
+    bottom: 50px;
+    right: 130px;
+}
+
+.card-2,
+.card-3 {
+    left: 80px;
+    bottom: 40px;
+}
+
+.card-4 {
+    bottom: 30px;
+    right: 50px;
+}
+
+.card-5 {
+    position: relative;
+    right: 70px;
+    bottom: 70px;
+}
+
+.signs-part {
+    width: 100%;
+    height: auto;
+    opacity: 0.84;
+    background: linear-gradient(270deg, #E7554C 0%, #FFD567 100%);
+    box-shadow: 0 10px 87.6px -46px #B22726;
+    padding: 40px;
+}
+
+.sign-heading {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rubik;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.sign-sub-heading {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+
+.sign-card-part {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.sign-cards {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: -300px;
+    margin-right: 90px;
+}
+
+
+.sign-card {
+    width: 522px;
+    height: 209px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 #B22726;
+    padding: 20px 50px;
+}
+
+.sign-card li {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    /* 100% */
+    text-transform: capitalize;
+}
+
+.sign-img-box {
+    position: relative;
+    border-radius: 16px;
+}
+
+
+.sign-img-box img {
+    width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+
+.sign-cards:first-child .sign-img-box {
+    margin-left: -190px;
+    margin-bottom: 130px;
+}
+
+.sign-cards:last-child .sign-img-box {
+    margin-right: -60px;
+    margin-top: 130px;
+}
+
+.sign-bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-heading {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150px;
+    /* 468.75% */
+}
+
+.bottom-para {
+    color: #040404;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+    text-transform: capitalize;
+    width: 1046px;
+    height: 77px;
+    border-radius: 20px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.why-choose-section {
+    display: flex;
+    align-items: center;
+    padding: 2% 10%;
+}
+
+.choose-heading {
+    color: #000;
+    text-align: center;
+    font-family: KoHo;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    /* 121.622% */
+}
+
+.choose-sub-heading {
+    background: linear-gradient(180deg, #EF7F1A 0%, #B22726 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Nada Qonita - Personal Use";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    text-align: center;
+}
+
+.list-heading {
+    color: #E6534B;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.list-para {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    text-transform: capitalize;
+}
+
+.choose-list ol {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.choose-list ol li {
+    color: rgba(255, 212, 102, 0.53);
+    /* text-align: center; */
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.choose-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px;
+}
+
+.choose-list li::marker {
+    content: "";
+}
+
+.choose-list {
+    list-style: none;
+    counter-reset: step;
+    padding-left: 0;
+}
+
+.choose-list li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 60px;
+}
+
+/* BIG NUMBER STYLE */
+.choose-list li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 64px;
+    font-weight: 700;
+    color: rgba(255, 212, 102, 0.53);
+    font-family: Poppins;
+}
+
+
+.choose-img {
+    width: 451px;
+    height: 451px;
+    border-radius: 451px;
+    border: 4px solid #ED776A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.faqs-part {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: relative; */
+    padding: 50px;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    padding: 16px 12px;
+    border-radius: 12px 12px 0 0;
+    background: #ffffff;
+    transition: background 0.4s ease;
+}
+
+
+.faq-question.active {
+    background: linear-gradient(257deg,
+            var(--Colors-Neutrals-White, #FFF) -6.81%,
+            var(--Colors-Primary-HUE-Purple-100, #F1F0FB) 71.78%);
+}
+
+
+.step-col {
+    /* position: relative; */
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.step-number {
+    font-weight: bold;
+    color: #aab0c5;
+    font-size: 16px;
+    /* background: white; */
+    padding: 4px 6px;
+    z-index: 1;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.step-number.active {
+    color: #ff3b3b;
+    transform: scale(1.1);
+}
+
+
+.q-text {
+    flex: 1;
+    color: #000;
+    font-family: Kodchasan;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.faq-answer {
+    /* margin-left: 55px; */
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 12px 0 55px;
+    border-radius: 0 0 12px 12px;
+    background: #ffffff;
+    transition:
+        max-height 0.3s ease,
+        padding 0.3s ease,
+        background 0.4s ease;
+    
+    font-family: Sora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.faq-answer.open {
+    max-height: 300px;
+    padding: 10px 12px 12px 55px;
+
+    background: linear-gradient(257deg,
+            var(--Colors-Neutrals-White, #FFF) -6.81%,
+            var(--Colors-Primary-HUE-Purple-100, #F1F0FB) 71.78%);
+}
+
+
+/* Icon Container */
+.icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+
+.icon .line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform-origin: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon .line:first-child {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.icon .line:last-child {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.icon.active .line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.icon.active .line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+
+
+.faq-round-1 {
+    width: 299px;
+    height: 299px;
+    border-radius: 299px;
+    background: #FFF;
+    box-shadow: 0 4px 36.1px -8px #B22726;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-round-2 {
+    width: 174px;
+    height: 173px;
+    background: #FFD46678;
+    border-radius: 50%;
+    fill: rgba(255, 212, 102, 0.47);
+    /* filter: drop-shadow(0 4px 36.1px #B22726); */
+    box-shadow: 0 4px 36.1px -8px #B22726;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-name {
+    color: #E7554C;
+    text-align: right;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rubik;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.contact-input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.contact-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+
+
+@media (max-width: 1439px) {
+
+    .banner-info {
+        left: 20px;
+    }
+
+    .banner-para {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-arrow {
+        display: flex;
+
+    }
+
+    .sub-nav ul {
+        gap: 12px;
+        justify-content: flex-start;
+        padding: 0 10px;
+    }
+
+    .sub-nav ul li {
+        padding: 10px 24px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .symptoms-part {
+        padding: 20px 100px;
+    }
+
+    .symptoms-sub-para {
+        width: 100%;
+    }
+
+    .banner-form {
+        width: 100%;
+    }
+
+
+    .flex1 {
+        margin-top: -90px;
+    }
+
+    .bottom-heading {
+        line-height: normal;
+        padding: 20px;
+    }
+
+    .bottom-para {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .sign-bottom-content {
+        margin-top: 20px;
+    }
+    .card-2,
+    .card-3 {
+        left: -40px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 840px;
+    }
+
+    .card-4 {
+        right: 10px;
+    }
+
+    .card-5 {
+        right: -10px;
+    }
+
+    .banner-form-part {
+        gap: 20px;
+    }
+
+    .banner-form-part  button{
+        width: 233px;
+        font-size: 18px;
+    }
+
+    .banner-video video{
+        margin: 0;
+    }
+
+    .doctor-heading{
+        line-height: normal;
+        padding: 20px;
+    }
+
+    .sub-nav-scroll{
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .home-page-container {
+        padding-top: 70px;
+    }
+
+    .banner-info {
+        left: 50px;
+        top: 100px;
+    }
+
+    .banner-heading,
+    .banner-heading span {
+        font-size: 100px;
+    }
+
+    .sub-nav-wrapper {
+        width: 95%;
+        gap: 10px;
+    }
+
+    .sub-nav {
+        height: auto;
+        min-height: 60px;
+        padding: 10px 15px;
+        top: 70px;
+    }
+
+    .sub-nav ul {
+        gap: 10px;
+        padding: 0 5px;
+    }
+
+    .sub-nav ul li {
+        padding: 10px 20px;
+    }
+
+    .li-1 {
+        font-size: 18px;
+    }
+
+    .li-2,
+    .li-3 {
+        font-size: 16px;
+    }
+
+    .banner-right-side,
+    .banner-left-side {
+        height: 450px;
+    }
+
+    .surgery-sub-heading {
+        text-align: center;
+        font-size: 20px;
+        /* width: 30%; */
+        padding: 10px;
+    }
+
+    .nav-arrow {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .nav-arrow svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .define-section {
+        margin: 20px auto;
+    }
+
+    .surgery-container {
+        padding: 20px;
+        width: 70%;
+    }
+
+    .surgery-para {
+        font-size: 14px;
+    }
+
+    .define-header {
+        font-size: 13px;
+    }
+
+    .arrow-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .img-2 {
+        margin-top: 0;
+    }
+
+    .symptoms-part {
+        padding: 20px;
+    }
+
+    .surgery-for {
+        flex-direction: column;
+    }
+
+    .surgery-icons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .icon-2 {
+        margin-left: 0;
+    }
+
+    .doctor-card {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .procedure-card {
+        position: static;
+    }
+
+    .card-5 {
+        position: static;
+    }
+
+    .video-section {
+        flex-direction: column;
+        gap: 270px;
+        align-items: center;
+    }
+
+    .banner-content {
+        gap: 20px;
+    }
+
+    .box-video {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .procedure-header {
+        flex-direction: column;
+    }
+
+    .heading {
+        text-align: start;
+    }
+
+    video {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .sign-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .why-choose-section {
+        flex-wrap: wrap;
+        /* align-items: center; */
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .banner-heading,
+    .banner-heading span {
+        font-size: 64px;
+    }
+
+    .choose-heading {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .choose-sub-heading {
+        font-size: 40px;
+        line-height: normal;
+
+    }
+
+    .choose-img img,
+    .choose-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-sub-heading,
+    .bottom-heading {
+        font-size: 22px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .flex1 {
+        margin: 0;
+    }
+
+    .sign-heading {
+        font-size: 26px;
+    }
+
+    .surgery-heading {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .symptoms-heading {
+        font-size: 22px;
+    }
+
+    .symptoms-subheading {
+        font-size: 18px;
+    }
+
+    .banner-form-part {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-form-part button {
+        width: 183px;
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    .banner-video {
+        display: none;
+    }
+
+
+
+
+
+}
+
+@media (max-width:767px) {
+    .home-page-container {
+        padding-top: 70px;
+    }
+
+
+
+    .sub-nav-wrapper {
+        margin: 15px auto;
+        gap: 8px;
+    }
+
+    .sub-nav {
+        top: 70px;
+        min-height: 55px;
+        padding: 8px 12px;
+    }
+
+    .sub-nav ul {
+        gap: 8px;
+    }
+
+    .sub-nav ul li {
+        padding: 8px 18px;
+    }
+
+    .li-1 {
+        font-size: 16px;
+    }
+
+    .li-2,
+    .li-3 {
+        font-size: 14px;
+    }
+
+    .banner-right-side,
+    .banner-left-side {
+        height: 350px;
+    }
+
+    .nav-arrow {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+    }
+
+    .nav-arrow svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .surgery-container {
+        padding: 15px;
+        width: 40%;
+    }
+
+    .surgery-para {
+        font-size: 13px;
+    }
+
+    .arrow-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .signs-part {
+        padding: 20px;
+    }
+
+    .sign-cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sign-cards:last-child .sign-img-box,
+    .sign-cards:first-child .sign-img-box {
+        margin: 0;
+    }
+
+    .banner-video {
+        display: none;
+    }
+
+    .doctor-heading {
+        line-height: normal;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .list span {
+        font-size: 18px;
+    }
+
+    .doctor-card-btns {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-heading {
+        font-size: 60px;
+    }
+
+    .procedure-card {
+        width: 304px;
+    }
+
+    .video-section {
+        gap: 350px;
+    }
+
+    .wi {
+        width: 30%;
+    }
+
+    .box-video {
+        display: none;
+    }
+
+    .banner-info {
+        left: 0px;
+        padding: 20px;
+    }
+
+    .bottom-para {
+        font-size: 12px;
+    }
+
+
+
+
+    .banner-form-part button {
+        margin-top: 0;
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .banner {
+        height: 940px;
+    }
+}
