@@ -17,5 +17,9 @@ export class NavBar {
   }
 
 
+  goToDoctor() {
+    window.open('https://www.fortishealthcare.com/doctors/dr-darshan-kumar-jain-14538', '_blank');
+  }
+
 
 }
