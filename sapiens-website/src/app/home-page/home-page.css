@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'Nada Qonita';
+    src: url('/Nada-Qonita.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 .home-page-container {
-    padding-top: 80px;
+    padding-top: 85px;
     overflow: hidden;
     background: #FFF9EB;
     margin-bottom: 50px;
@@ -7,7 +15,7 @@
 
 .banner-part img {
     width: 100%;
-    height: 690px;
+    height: 730px;
 
 }
 
@@ -15,7 +23,7 @@
 .banner-info {
     position: absolute;
     left: 225px;
-    top: 110px;
+    top: 190px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -90,9 +98,10 @@
 
 .banner-form-part {
     display: flex;
-    gap: 50px;
-    margin-top: 30px;
+    gap: 0px;
+    /* margin-top: 30px; */
     align-items: center;
+    margin-top: 30px;
 }
 
 .banner-form-part button {
@@ -119,6 +128,13 @@
     text-transform: uppercase;
     margin-top: 150px;
     cursor: pointer;
+    margin-left: 60px;
+}
+
+.banner-form-part button:hover {
+    background: #E7554C;
+    color: white;
+    border: 1px solid #FFF;
 }
 
 
@@ -147,6 +163,8 @@
     aspect-ratio: 68/39;
     border-radius: 40px;
     border: 16px solid #E6534B;
+    margin: -30px 0 0 50px;
+    object-fit: cover;
 }
 
 
@@ -217,14 +235,6 @@
     white-space: nowrap;
 }
 
-.sub-nav ul li {
-    cursor: pointer;
-    transition: all 0.3s ease;
-    flex-shrink: 0;
-    padding: 12px 28px;
-    border-radius: 50px;
-    background: transparent;
-}
 
 .sub-nav .symptoms-heading {
     color: #E7554C;
@@ -236,39 +246,29 @@
     line-height: normal;
 }
 
-.sub-nav li:hover {
+
+.sub-nav ul li {
+    color: #D09600;
+    padding: 12px 28px;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.sub-nav ul li:focus {
+    color: #000;
+    font-size: 28px;
+    outline: none;
+}
+
+.sub-nav ul li:hover {
     background: rgba(255, 255, 255, 0.5);
     transform: translateY(-2px);
 }
 
-/* Active/Selected state */
-/* ul li.active {
-    border-radius: 0 20px 20px 0;
-    background: linear-gradient(270deg, #FFD567 4.43%, #E6534B 99.95%);
-    color: white !important;
-    box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
-} */
-
-.li-1 {
-    color: #000;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: Rubik;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.li-2 {
-    color: #D09600;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: Rubik;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: capitalize;
-}
 
 .li-3 {
     color: #E7554C;
@@ -359,6 +359,7 @@
     align-items: center;
     gap: 20px;
     justify-content: center;
+    text-align: center;
 }
 
 .surgery-heading {
@@ -486,7 +487,8 @@
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
-    padding: 10px;
+    padding: 20px 20px 20px 0;
+
 }
 
 .symptoms-sub-para {
@@ -499,7 +501,7 @@
     line-height: 24px;
     /* 150% */
     text-transform: capitalize;
-    /* width: 1217px; */
+
 }
 
 .symptoms-list {
@@ -509,10 +511,10 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 50px;
     /* 100% */
     text-transform: capitalize;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 .flex {
@@ -532,14 +534,19 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .surgery-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    /* gap: 30px; */
+}
+
+.icon-1,
+.icon-3 {
+    margin-right: 40%;
 }
 
 .icon-2 {
@@ -550,13 +557,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    padding: 40px;
+    /* gap: 100px; */
+    /* padding: 0 40px 40px 0; */
     width: 100%;
     /* height: auto; */
     background: #FFF;
     overflow: hidden;
-    /* box-shadow: 4px 4px 10px 6px rgba(0, 0, 0, 0.25); */
+    box-shadow: 4px 4px 10px 6px rgba(0, 0, 0, 0.25);
 }
 
 .fl {
@@ -568,9 +575,67 @@
 
 .doctor-img {
     position: relative;
-    width: 430px;
-    height: 430px;
+    /* top: 30px; */
+    /* width: 50%; */
+    /* height: 430px; */
 }
+
+.doctor-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.surgery-part .left-line {
+    width: 471px;
+    height: 0;
+    border: 1px solid #E7554C;
+}
+
+.surgery-part .right-line {
+    width: 471px;
+    height: 0;
+    border: 1px solid #E7554C;
+}
+
+.perform-part .right-line {
+    width: 488px;
+    height: 0;
+    border: 1px solid #E7554C;
+}
+
+.perform-part .left-line {
+    width: 488px;
+    height: 0;
+    border: 1px solid #E7554C;
+}
+
+.procedure-part .right-line {
+    width: 507px;
+    height: 0;
+    border: 1px solid #E7554C;
+}
+
+.procedure-part .left-line {
+    width: 509px;
+    height: 0;
+    border: 1px solid #E7554C;
+}
+
+.signs-part .left-line {
+    width: 543px;
+    height: 0;
+    border: 1px solid #E7554C;
+}
+
+.signs-part .right-line {
+    width: 543px;
+    height: 0;
+    border: 1px solid #E7554C;
+}
+
+
 
 
 .box-1 {
@@ -580,7 +645,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(8deg);
+    transform: rotate(-1deg);
 }
 
 .box-2 {
@@ -653,11 +718,16 @@
 .box-2 img {
     position: relative;
     z-index: 1;
+    transform: rotate(16deg);
 }
 
 .box-1 {
-    transform: rotate(8deg);
+    transform: rotate(-1deg);
     transition: transform 0.4s ease;
+}
+
+.doctor-content {
+    /* width: 50%; */
 }
 
 .box-2 {
@@ -665,13 +735,13 @@
     transition: transform 0.4s ease;
 }
 
-.doctor-img:hover .box-1 {
+/* .doctor-img:hover .box-1 {
     transform: rotate(12deg);
 }
 
 .doctor-img:hover .box-2 {
     transform: rotate(-20deg);
-}
+} */
 
 .list {
     color: #E7554C;
@@ -718,6 +788,12 @@
     cursor: pointer;
 }
 
+.btn:hover {
+    background: #E7554C;
+    color: white;
+    border: 1px solid #FFF;
+}
+
 .perform-part {
     display: flex;
     flex-direction: column;
@@ -727,7 +803,7 @@
     backdrop-filter: blur(2px);
     width: 100%;
     height: auto;
-    padding: 40px 20px;
+    padding-top: 40px;
 }
 
 .cards {
@@ -736,6 +812,8 @@
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 40px 20px;
+
 }
 
 .perform-card {
@@ -762,12 +840,13 @@
     font-weight: 500;
     line-height: 30px;
     /* width: 222px; */
-    height: 80px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    margin-top: 10px;
 }
 
 .card-para {
@@ -781,6 +860,7 @@
     line-height: 24px;
     /* 150% */
     text-transform: capitalize;
+    padding: 0 16px 16px;
 }
 
 .procedure-part {
@@ -811,7 +891,7 @@
     border: 3px solid #E7554C;
 }
 
-video {
+.box-video video {
     width: 594px;
     height: 598px;
     aspect-ratio: 297/299;
@@ -819,12 +899,13 @@ video {
     border: 1px solid #E6534B;
     box-shadow: 0 4px 20px -1px #8360CE;
     object-fit: cover;
-    margin: 40px 0 0 50px;
+    margin: 45px 0 0 50px;
 }
 
 .procedure-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .procedure-header img {
@@ -839,7 +920,7 @@ video {
     border-radius: 4px;
     background: #FFF;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    padding: 20px;
+    padding: 15px;
     position: relative;
 
 }
@@ -888,7 +969,7 @@ video {
 .card-5 {
     position: relative;
     right: 70px;
-    bottom: 70px;
+    bottom: 50px;
 }
 
 .signs-part {
@@ -897,7 +978,12 @@ video {
     opacity: 0.84;
     background: linear-gradient(270deg, #E7554C 0%, #FFD567 100%);
     box-shadow: 0 10px 87.6px -46px #B22726;
-    padding: 40px;
+    margin-top: 20px;
+    padding: 40px 0;
+}
+
+.pad {
+    padding: 40px 40px 40px 80px;
 }
 
 .sign-heading {
@@ -920,7 +1006,7 @@ video {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 
@@ -936,18 +1022,25 @@ video {
     gap: 40px;
 }
 
+.sign-cards1 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
 .flex1 {
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-top: -300px;
-    margin-right: 90px;
+    margin-top: -390px;
+    margin-right: 40px;
 }
 
 
 .sign-card {
     width: 522px;
-    height: 209px;
+    height: auto;
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0 4px 4px 0 #B22726;
@@ -961,7 +1054,7 @@ video {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 35px;
+    line-height: 45px;
     /* 100% */
     text-transform: capitalize;
 }
@@ -980,9 +1073,9 @@ video {
 }
 
 
-.sign-cards:first-child .sign-img-box {
+.sign-cards1:first-child .sign-img-box {
     margin-left: -190px;
-    margin-bottom: 130px;
+    margin-bottom: 230px;
 }
 
 .sign-cards:last-child .sign-img-box {
@@ -1003,7 +1096,7 @@ video {
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150px;
+    line-height: 80px;
     /* 468.75% */
 }
 
@@ -1048,7 +1141,7 @@ video {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: "Nada Qonita - Personal Use";
+    font-family: 'Nada Qonita';
     font-size: 96px;
     font-style: normal;
     font-weight: 400;
@@ -1084,7 +1177,7 @@ video {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .choose-list ol li {
@@ -1146,7 +1239,8 @@ video {
 
 
 .faqs-part {
-    display: flex;
+    display: grid;
+    grid-template-columns: 60% 40%;
     justify-content: space-evenly;
     align-items: center;
     /* position: relative; */
@@ -1168,6 +1262,7 @@ video {
     border-radius: 12px 12px 0 0;
     background: #ffffff;
     transition: background 0.4s ease;
+    height: 70px;
 }
 
 
@@ -1177,6 +1272,12 @@ video {
             var(--Colors-Primary-HUE-Purple-100, #F1F0FB) 71.78%);
 }
 
+
+.faq-round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .step-col {
     /* position: relative; */
@@ -1224,7 +1325,7 @@ video {
         max-height 0.3s ease,
         padding 0.3s ease,
         background 0.4s ease;
-    
+
     font-family: Sora;
     font-size: 14px;
     font-style: normal;
@@ -1244,8 +1345,8 @@ video {
 
 /* Icon Container */
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
     position: relative;
     display: inline-block;
     transition: transform 0.3s ease;
@@ -1360,9 +1461,13 @@ video {
         padding: 10px 24px;
     }
 
-    .banner img {
+    .sub-nav ul li:focus{
+        font-size: 18px;
+    }
+
+    .banner-part img {
         width: 100%;
-        height: 100%;
+        height: 840px;
     }
 
     .symptoms-part {
@@ -1396,15 +1501,13 @@ video {
     .sign-bottom-content {
         margin-top: 20px;
     }
+
     .card-2,
     .card-3 {
         left: -40px;
     }
 
-    .banner {
-        width: 100%;
-        height: 840px;
-    }
+
 
     .card-4 {
         right: 10px;
@@ -1418,22 +1521,46 @@ video {
         gap: 20px;
     }
 
-    .banner-form-part  button{
+    .banner-form-part button {
         width: 233px;
         font-size: 18px;
+        margin-left: 0;
     }
 
-    .banner-video video{
+    .banner-video video {
         margin: 0;
     }
 
-    .doctor-heading{
+    .doctor-heading {
         line-height: normal;
         padding: 20px;
     }
 
-    .sub-nav-scroll{
+    .sub-nav-scroll {
         justify-content: flex-start;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .surgery-header {
+        gap: 0px;
+    }
+
+    .doctor-card {
+        padding: 20px;
+    }
+
+    .faqs-part {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
     }
 }
 
@@ -1441,6 +1568,10 @@ video {
 @media (max-width: 1023px) {
     .home-page-container {
         padding-top: 70px;
+    }
+
+    .banner-part img {
+        height: 580px;
     }
 
     .banner-info {
@@ -1530,8 +1661,9 @@ video {
 
     .flex {
         flex-direction: column;
-        gap: 30px;
+        gap: 0px;
     }
+
 
     .img-2 {
         margin-top: 0;
@@ -1553,12 +1685,12 @@ video {
     }
 
     .icon-2 {
-        margin-left: 0;
+        /* margin-left: 0; */
     }
 
     .doctor-card {
         flex-direction: column;
-        gap: 40px;
+        gap: 0px;
     }
 
     .cards {
@@ -1575,7 +1707,7 @@ video {
 
     .video-section {
         flex-direction: column;
-        gap: 270px;
+        gap: 320px;
         align-items: center;
     }
 
@@ -1591,7 +1723,7 @@ video {
     }
 
     .procedure-header {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .heading {
@@ -1651,6 +1783,7 @@ video {
 
     .sign-heading {
         font-size: 26px;
+        padding: 10px;
     }
 
     .surgery-heading {
@@ -1660,10 +1793,12 @@ video {
 
     .symptoms-heading {
         font-size: 22px;
+        text-align: center;
     }
 
     .symptoms-subheading {
         font-size: 18px;
+        text-align: center;
     }
 
     .banner-form-part {
@@ -1684,7 +1819,25 @@ video {
         display: none;
     }
 
+    .box-video {
+        border: none;
+    }
 
+    .box-video video {
+        margin: 0;
+    }
+
+    .doctor-card-btns {
+        justify-content: center;
+    }
+
+    .para {
+        text-align: center;
+    }
+
+    .sign-card-part {
+        padding: 20px;
+    }
 
 
 
@@ -1695,7 +1848,9 @@ video {
         padding-top: 70px;
     }
 
-
+    .banner-part img {
+        height: 820px;
+    }
 
     .sub-nav-wrapper {
         margin: 15px auto;
@@ -1746,6 +1901,7 @@ video {
         width: 40%;
     }
 
+
     .surgery-para {
         font-size: 13px;
     }
@@ -1755,9 +1911,6 @@ video {
         height: 16px;
     }
 
-    .signs-part {
-        padding: 20px;
-    }
 
     .sign-cards {
         flex-direction: column;
@@ -1765,8 +1918,14 @@ video {
         justify-content: center;
     }
 
+    .sign-cards1 {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
     .sign-cards:last-child .sign-img-box,
-    .sign-cards:first-child .sign-img-box {
+    .sign-cards1:first-child .sign-img-box {
         margin: 0;
     }
 
@@ -1820,17 +1979,26 @@ video {
         font-size: 12px;
     }
 
-
-
-
     .banner-form-part button {
         margin-top: 0;
         font-size: 14px;
         width: 100%;
         padding: 10px;
+        height: 40px;
     }
 
-    .banner {
-        height: 940px;
+
+
+
+    .pad {
+        padding: 0;
+    }
+
+    .sign-card li {
+        line-height: 34px;
+    }
+
+    .faq-question {
+        height: auto;
     }
 }

@@ -5,11 +5,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    background: white;
+    background:transparent;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -97,7 +97,7 @@ a{
 
 .side-menu {
     position: fixed;
-    top: 85px;
+    top: 69px;
     right: -120%;
     width: 320px;
     height: calc(100vh - 80px);
@@ -113,7 +113,14 @@ a{
 
 .side-menu.open {
     right: 0;
+    display: none;
+
 }
+
+
+
+
+
 
 @media (max-width: 768px) {
     .nav-bar {
@@ -141,7 +148,7 @@ a{
 @media (max-width: 600px) {
     .side-menu {
         width: 100%;
-        top: 83px;
+        top: 70px;
     }
 
     .link-item {
@@ -150,5 +157,9 @@ a{
 
     .nav-bar-links {
         margin-left: 10%;
+    }
+
+    .nav-bar{
+        box-shadow: none;
     }
 }

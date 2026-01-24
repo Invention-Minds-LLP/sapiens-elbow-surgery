@@ -11,10 +11,12 @@
                 </svg>
             </div>
             <div class="nav-icon-content">
-                <div class="icon-heading">Phone Numbern</div>
-                <a href="tel:+917892556378"><div class="icon-subheading">
+                <div class="icon-heading">Phone Number</div>
+                <a href="tel:+917892556378">
+                    <div class="icon-subheading">
                         +91 78925 56378
-                    </div></a>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -34,10 +36,12 @@
                 </svg>
             </div>
             <div class="nav-icon-content">
-                <a href="mailto:sapiensclinic@gmail.com"><div class="icon-heading">Email Us Here</div>
-                <div class="icon-subheading">
+                <a href="mailto:sapiensclinic@gmail.com">
+                    <div class="icon-heading">Email Us Here</div>
+                    <div class="icon-subheading">
                         sapiensclinic@gmail.com
-                    </div></a>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -46,8 +50,8 @@
     <div class="part-2">
         <div class="doctor-name">Dr. Darshan Kumar A. Jain</div>
         <div class="doctor-qualification">MBBS, MS Ortho (KMC Manipal),
-            FNB, Clinical Fellow National University Hospital, (Singapore),
-            MNAMS, PGDHHM, Diploma in Tissue Banking (Singapore)</div>
+            <div>FNB, Clinical Fellow National University Hospital, (Singapore),</div>
+            <div>MNAMS, PGDHHM, Diploma in Tissue Banking (Singapore)</div></div>
 
         <div class="btns">
             <button class="book-btn" (click)="scrollToContact()">Book Appointment</button>
@@ -57,11 +61,13 @@
 
 
     <div class="part-3">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.475084671423!2d77.56893461220703!3d13.005390086790818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae172329d41e0b%3A0x415cd1c76d7ec943!2sDr%20Darshan%20Kumar%20A.%20Jain!5e0!3m2!1sen!2sin!4v1683783254060!5m2!1sen!2sin"
-            allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-            title="Dr. Darshan Kumar A. Jain Clinic Location">
-        </iframe>
+        <div class="map" >
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.475084671423!2d77.56893461220703!3d13.005390086790818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae172329d41e0b%3A0x415cd1c76d7ec943!2sDr%20Darshan%20Kumar%20A.%20Jain!5e0!3m2!1sen!2sin!4v1683783254060!5m2!1sen!2sin"
+                allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+                title="Dr. Darshan Kumar A. Jain Clinic Location">
+            </iframe>
+        </div>
 
         <div class="location"><span><img src="imgs/location-img.png" alt=""></span> 18/3, 1st Main Ranganathapura
             18th cross, entrance, opposite Sankey tank, Malleshwaram, Bengaluru, Karnataka 560003.</div>
@@ -71,10 +77,10 @@
 </div>
 <div class="bottom">
     <ul>
-        <li>Privacy Policy</li>
-        <li>Terms of Use</li>
-        <li>Parking Location</li>
-        <li>Clinic Map</li>
+        <!-- <li>Privacy Policy</li>
+        <li>Terms of Use</li> -->
+        <li><a href="https://maps.app.goo.gl/qV7nqgmqEcpkXTeDA" target="_blank" >Parking Location</a></li>
+        <li><a href="https://maps.app.goo.gl/AacBxcD9GM5bwSQAA" target="_blank" >Clinic Map</a></li>
     </ul>
 
     <div class="copy-rights">© {{currentYear}} All Rights Reserved</div>
