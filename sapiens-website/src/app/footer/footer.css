@@ -29,6 +29,11 @@
     cursor: pointer;
 }
 
+.map iframe{
+    border-radius: 30px;
+    border: none;
+}
+
 .nav-icon {
     width: 42.806px;
     height: 42.806px;
@@ -174,7 +179,7 @@
     list-style: none;
 }
 
-.bottom ul li {
+.bottom ul li a{
     color: #E7554C;
     font-family: Roboto;
     font-size: 14px;
@@ -209,7 +214,7 @@ a{
         width: 100%;
         justify-content: center;
         text-align: center;
-        height: auto;
+        /* height: auto; */
     }
     .doctor-qualification{
         width: 100%;

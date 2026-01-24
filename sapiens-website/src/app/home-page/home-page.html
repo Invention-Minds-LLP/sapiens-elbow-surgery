@@ -43,7 +43,7 @@
     <div class="content-part">
         <div class="sub-nav-wrapper">
             <!-- Left Arrow -->
-            <button class="nav-arrow nav-arrow-left" (click)="scrollLeft()"  *ngIf="!menuOpen">
+            <button class="nav-arrow nav-arrow-left" (click)="scrollLeft()" *ngIf="!menuOpen">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
                 </svg>
@@ -53,19 +53,19 @@
             <div class="sub-nav" [class.stuck]="isStuck">
                 <div class="sub-nav-scroll" #subNavScroll>
                     <ul>
-                        <li class="li-1 active" (click)="scrollTo('elbow')">Elbow Surgery</li>
-                        <li class="li-2" (click)="scrollTo('doctor')">Doctor</li>
-                        <li class="li-2" (click)="scrollTo('procedure')">Procedure</li>
-                        <li class="li-2" (click)="scrollTo('treatment')">Treatment</li>
-                        <li class="li-2" (click)="scrollTo('faqs')">FAQs</li>
-                        <li class="li-3" (click)="scrollTo('contact')">Contact us</li>
+                        <li class="li-1" tabindex="0" (click)="scrollTo('elbow')">Elbow Surgery</li>
+                        <li class="li-2" tabindex="0" (click)="scrollTo('doctor')">Doctor</li>
+                        <li class="li-2" tabindex="0" (click)="scrollTo('procedure')">Procedure</li>
+                        <li class="li-2" tabindex="0" (click)="scrollTo('treatment')">Treatment</li>
+                        <li class="li-2" tabindex="0" (click)="scrollTo('faqs')">FAQs</li>
+                        <li class="li-3" tabindex="0" (click)="scrollTo('contact')">Contact us</li>
                     </ul>
 
                 </div>
             </div>
 
             <!-- Right Arrow -->
-            <button class="nav-arrow nav-arrow-right" (click)="scrollRight()"  *ngIf="!menuOpen">
+            <button class="nav-arrow nav-arrow-right" (click)="scrollRight()" *ngIf="!menuOpen">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
                 </svg>
@@ -74,15 +74,19 @@
 
         <div class="surgery-part">
             <div class="surgery-header">
-                <div class="right-line"><svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
+                <div class="right-line">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
                         viewBox="0 0 441 1" fill="none">
                         <path d="M-25 0.5H441" stroke="#E7554C" />
-                    </svg></div>
+                    </svg> -->
+                </div>
                 <div class="surgery-heading">Understanding Elbow Surgery</div>
-                <div class="left-line"><svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
+                <div class="left-line">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
                         viewBox="0 0 443 1" fill="none">
                         <path d="M0 0.5H466" stroke="#E7554C" />
-                    </svg></div>
+                    </svg> -->
+                </div>
             </div>
 
             <div class="ml" id="elbow">
@@ -173,11 +177,11 @@
 
         <div class="doctor-card" id="doctor">
             <div class="doctor-img">
-                <div class="bg-glow"></div>
+                <!-- <div class="bg-glow"></div> -->
 
-                <div class="box-1">
-                    <div class="box-2">
-                        <img src="imgs/Dr. Darshan Kumar A. Jain Photo 2 2.png" alt="Doctor">
+                <div class="">
+                    <div class="">
+                        <img src="imgs/doctor-img.png" alt="Doctor">
                     </div>
                 </div>
             </div>
@@ -232,15 +236,18 @@
 
         <div class="perform-part">
             <div class="surgery-header">
-                <div class="right-line"><svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
+                <div class="right-line">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
                         viewBox="0 0 441 1" fill="none">
                         <path d="M-25 0.5H441" stroke="#E7554C" />
-                    </svg></div>
-                <div class="surgery-heading">Elbow Surgery Procedure</div>
-                <div class="left-line"><svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
+                    </svg> -->
+                </div>
+                <div class="surgery-heading">Elbow Surgeries We Perform</div>
+                <div class="left-line">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
                         viewBox="0 0 443 1" fill="none">
                         <path d="M0 0.5H466" stroke="#E7554C" />
-                    </svg>
+                    </svg> -->
                 </div>
             </div>
 
@@ -262,15 +269,18 @@
 
         <div class="procedure-part" id="procedure">
             <div class="surgery-header">
-                <div class="right-line"><svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
+                <div class="right-line">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
                         viewBox="0 0 441 1" fill="none">
                         <path d="M-25 0.5H441" stroke="#E7554C" />
-                    </svg></div>
+                    </svg> -->
+                </div>
                 <div class="surgery-heading"> Elbow Surgery Procedure</div>
-                <div class="left-line"><svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
+                <div class="left-line">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
                         viewBox="0 0 443 1" fill="none">
                         <path d="M0 0.5H466" stroke="#E7554C" />
-                    </svg>
+                    </svg> -->
                 </div>
             </div>
 
@@ -340,25 +350,28 @@
 
         <div class="signs-part" id="treatment">
             <div class="surgery-header">
-                <div class="right-line"><svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
+                <div class="right-line">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="441" height="1"
                         viewBox="0 0 441 1" fill="none">
                         <path d="M-25 0.5H441" stroke="#E7554C" />
-                    </svg></div>
+                    </svg> -->
+                </div>
                 <div class="surgery-heading">Understand the Signs</div>
-                <div class="left-line"><svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
+                <div class="left-line">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
                         viewBox="0 0 443 1" fill="none">
                         <path d="M0 0.5H466" stroke="#E7554C" />
-                    </svg>
+                    </svg> -->
                 </div>
             </div>
 
             <div class="sign-heading">Plan the Right Elbow Treatment</div>
 
 
-            <div class="">
+            <div class="pad">
                 <div class="sign-sub-heading">Common Conditions Treated with Elbow Surgery</div>
                 <div class="sign-card-part">
-                    <div class="sign-cards" style="margin-top: 20px;">
+                    <div class="sign-cards1" style="margin-top: 20px;">
                         <div class="sign-card">
                             <ul>
                                 <li>Tennis elbow and golfer’s elbow</li>
@@ -439,29 +452,6 @@
                 <img src="imgs/clinic-img.png" alt="">
             </div>
         </div>
-
-        <!-- <div class="contact-part" id="contact">
-            <img src="imgs/contact-img.png" alt="">
-
-            <div class="contact-info">
-                <div class="contact-heading">could not find what you are looking for?</div>
-                <div class="contact-sub-heading">request a callback</div>
-
-                <form [formGroup]="callbackForm" (ngSubmit)="submit()">
-
-                    <input type="text" formControlName="name" placeholder="Enter your name" class="contact-input">
-
-                    <input type="tel" formControlName="phone" placeholder="Enter your phone number"
-                        class="contact-input">
-
-                    <button type="submit" class="contact-btn">
-                        Submit
-                    </button>
-
-                </form>
-            </div>
-        </div> -->
-
         <app-call-back-form id="contact"></app-call-back-form>
 
 
@@ -490,9 +480,11 @@
                 </div>
 
                 <!-- Round FAQ Badge -->
-                <div class="faq-round-1">
-                    <div class="faq-round-2">
-                        <div class="faq-name">FAQs</div>
+                <div class="faq-round">
+                    <div class="faq-round-1">
+                        <div class="faq-round-2">
+                            <div class="faq-name">FAQs</div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -5,11 +5,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    background: white;
+    background:transparent;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -150,5 +150,9 @@ a{
 
     .nav-bar-links {
         margin-left: 10%;
+    }
+
+    .nav-bar{
+        box-shadow: none;
     }
 }
