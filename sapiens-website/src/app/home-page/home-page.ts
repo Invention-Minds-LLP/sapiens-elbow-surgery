@@ -213,22 +213,26 @@ export class HomePage {
     {
       img: 'imgs/img-1.png',
       heading: 'Elbow Replacement / Elbow Arthroplasty',
-      para: 'Surgical replacement of damaged elbow joint components to reduce pain and improve movement'
+      para: 'Surgical replacement of damaged elbow joint components to reduce pain and improve movement',
+      alttext : 'Elbow replacement surgery showing artificial elbow joint prosthesis for severe elbow damage'
     },
     {
       img: 'imgs/img-2.png',
       heading: 'Elbow Arthroscopy',
-      para: 'Minimally invasive elbow surgery used to diagnose and treat elbow joint problems accurately.'
+      para: 'Minimally invasive elbow surgery used to diagnose and treat elbow joint problems accurately.',
+      alttext : 'Elbow arthroscopy minimally invasive elbow surgery for joint pain and stiffness'
     },
     {
       img: 'imgs/img-3.png',
       heading: 'Synovitis of Elbow',
-      para: 'Surgical management of inflamed elbow joint lining causing pain and stiffness.'
+      para: 'Surgical management of inflamed elbow joint lining causing pain and stiffness.',
+      alttext : 'Elbow surgery for synovitis showing inflamed elbow joint lining causing pain'
     },
     {
       img: 'imgs/img-4.png',
       heading: 'Ligament Repair or Reconstruction of Elbow',
-      para: 'Repair or reconstruction of injured elbow ligaments to restore joint stability and function.'
+      para: 'Repair or reconstruction of injured elbow ligaments to restore joint stability and function.',
+      alttext : 'Elbow ligament repair surgery to restore stability after elbow injury'
     },
   ]
 

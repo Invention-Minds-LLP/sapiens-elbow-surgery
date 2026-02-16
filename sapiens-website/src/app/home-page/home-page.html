@@ -3,15 +3,17 @@
 <div class="home-page-container">
     <div class="banner-part">
         <div class="banner">
-            <img src="/imgs/banar.png" alt="">
+            <img src="/imgs/banar.png" alt="Sapiens clinic - Elbow Surgery Page Banner Background">
         </div>
 
     </div>
 
     <div class="banner-info">
         <div class="header">
-            <div class="banner-heading">Elbow <span>Surgery</span> </div>
-            <div class="banner-subheading">in Malleshwaram, Bangalore</div>
+            <h1>
+            <span class="banner-heading">Elbow <span>Surgery</span> </span><br/>
+            <span class="banner-subheading">in Malleshwaram, Bangalore</span>
+            </h1>
         </div>
 
         <div class="banner-content">
@@ -80,7 +82,7 @@
                         <path d="M-25 0.5H441" stroke="#E7554C" />
                     </svg> -->
                 </div>
-                <div class="surgery-heading">Understanding Elbow Surgery</div>
+                <h2 class="surgery-heading">Understanding Elbow Surgery</h2>
                 <div class="left-line">
                     <!-- <svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
                         viewBox="0 0 443 1" fill="none">
@@ -90,7 +92,7 @@
             </div>
 
             <div class="ml" id="elbow">
-                <div class="surgery-sub-heading">What Is Elbow Surgery?</div>
+                <h2 class="surgery-sub-heading">What Is Elbow Surgery?</h2>
                 <div class="" style="display: flex; justify-content: center;">
                     <div class="surgery-container" [class.expanded]="isExpanded">
                         <div class="surgery-para">
@@ -128,7 +130,7 @@
 
         <div class="symptoms-part">
             <div class="">
-                <div class="symptoms-heading">Symptoms - When to Visit Sapiens Clinic</div>
+                <h3 class="symptoms-heading">Symptoms - When to Visit Sapiens Clinic</h3>
                 <div class="flex">
                     <div class="">
                         <div class="symptoms-subheading">You should consider consulting an elbow surgeon if you
@@ -144,8 +146,9 @@
                     </div>
 
                     <img src="imgs/woman-having-elbow-ache-due-to-lateral-epicondylit-2026-01-08-06-45-17-utc 1.png"
-                        alt="" class="img-1">
-                    <img src="imgs/midsection-doctor-examining-male-patient 1.png" alt="" class="img-2">
+                        alt="Patient holding painful elbow due to injury requiring elbow surgery" class="img-1">
+                    <img src="imgs/midsection-doctor-examining-male-patient 1.png" 
+                        alt="Orthopedic doctor examining elbow joint before surgery consultation" class="img-2">
 
                 </div>
                 <div class="symptoms-sub-para">A timely consultation with Dr. Darshan Kumar A. Jain, an experienced
@@ -156,13 +159,13 @@
 
         <div class="surgery-for">
             <div class="surgery-icons">
-                <img src="imgs/Physical Therapy.png" alt="" class="icon-1">
-                <img src="imgs/Arm Massage Area.png" alt="" class="icon-2">
-                <img src="imgs/Pill.png" alt="" class="icon-3">
+                <img src="imgs/Physical Therapy.png" alt="Elbow surgery treatment options for chronic elbow pain patients" class="icon-1">
+                <img src="imgs/Arm Massage Area.png" alt="Elbow surgery for restricted elbow movement and joint stiffness" class="icon-2">
+                <img src="imgs/Pill.png" alt="Elbow surgery for elbow instability, deformity, and repeated injuries" class="icon-3">
             </div>
 
             <div class="surgery-for-content">
-                <div class="symptoms-heading">Who Is This Surgery For?</div>
+                <h3 class="symptoms-heading">Who Is This Surgery For?</h3>
                 <div class="symptoms-subheading">Elbow surgery may be considered for patients who:</div>
                 <ul class="symptoms-list">
                     <li>Have long-standing elbow pain not improving with medication or physiotherapy</li>
@@ -181,13 +184,13 @@
 
                 <div class="">
                     <div class="">
-                        <img src="imgs/doctor-img.png" alt="Doctor">
+                        <img src="imgs/doctor-img.png" alt="Dr Darshan Kumar A Jain elbow surgery specialist in Bangalore with 15+ years experience">
                     </div>
                 </div>
             </div>
 
             <div class="doctor-content">
-                <div class="doctor-heading">Dr. Darshan Kumar A. Jain</div>
+                <h2 class="doctor-heading">Dr. Darshan Kumar A. Jain</h2>
 
                 <ul class="doctor-list">
                     <div class="fl">
@@ -242,7 +245,7 @@
                         <path d="M-25 0.5H441" stroke="#E7554C" />
                     </svg> -->
                 </div>
-                <div class="surgery-heading">Elbow Surgeries We Perform</div>
+                <h3 class="surgery-heading">Elbow Surgeries We Perform</h3>
                 <div class="left-line">
                     <!-- <svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
                         viewBox="0 0 443 1" fill="none">
@@ -254,7 +257,7 @@
             <div class="perform-content">
                 <div class="cards">
                     <div class="perform-card" *ngFor="let card of performCard">
-                        <img [src]="card.img" alt="">
+                        <img [src]="card.img" [alt]="card.alttext">
                         <div class="card-info">
                             <div class="card-heading">{{card.heading}}</div>
                             <div class="card-para">{{card.para}}</div>
@@ -275,7 +278,7 @@
                         <path d="M-25 0.5H441" stroke="#E7554C" />
                     </svg> -->
                 </div>
-                <div class="surgery-heading"> Elbow Surgery Procedure</div>
+                <h2 class="surgery-heading"> Elbow Surgery Procedure</h2>
                 <div class="left-line">
                     <!-- <svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
                         viewBox="0 0 443 1" fill="none">
@@ -284,7 +287,7 @@
                 </div>
             </div>
 
-            <div class="surgery-sub-heading wi">How the Treatment Is Planned & Performed</div>
+            <h3 class="surgery-sub-heading wi">How the Treatment Is Planned & Performed</h3>
 
             <div class="video-section">
                 <div class="box-video">
@@ -295,8 +298,8 @@
 
                     <div class="procedure-card card-5">
                         <div class="procedure-header">
-                            <div class="heading">Rehabilitation & Follow-Up</div>
-                            <img src="imgs/icon-5.png" alt="">
+                            <h3 class="heading">Rehabilitation & Follow-Up</h3>
+                            <img src="imgs/icon-5.png" alt="Elbow surgery rehabilitation and physiotherapy follow up">
                         </div>
 
                         <div class="para">Physiotherapy is advised to gradually restore elbow movement and strength.
@@ -306,8 +309,8 @@
                 <div class="procedure-cards">
                     <div class="procedure-card card-1">
                         <div class="procedure-header">
-                            <div class="heading">Clinical Evaluation</div>
-                            <img src="imgs/icon-1.png" alt="">
+                            <h3 class="heading">Clinical Evaluation</h3>
+                            <img src="imgs/icon-1.png" alt="Clinical evaluation before elbow surgery including consultation and imaging tests">
                         </div>
 
                         <div class="para">The process begins with a detailed consultation, physical examination, and
@@ -315,8 +318,8 @@
                     </div>
                     <div class="procedure-card card-2">
                         <div class="procedure-header">
-                            <div class="heading">Treatment Planning</div>
-                            <img src="imgs/icon-2.png" alt="">
+                            <h3 class="heading">Treatment Planning</h3>
+                            <img src="imgs/icon-2.png" alt="Elbow surgery treatment planning by orthopedic specialist">
                         </div>
 
                         <div class="para">Based on findings, the surgeon explains whether elbow surgery is required and
@@ -324,8 +327,8 @@
                     </div>
                     <div class="procedure-card card-3">
                         <div class="procedure-header">
-                            <div class="heading">Surgical Procedure</div>
-                            <img src="imgs/icon-3.png" alt="">
+                            <h3 class="heading">Surgical Procedure</h3>
+                            <img src="imgs/icon-3.png" alt="Elbow surgery procedure to repair damaged joint tissues">
                         </div>
 
                         <div class="para">Elbow surgery may involve repairing damaged tissues, relieving joint pressure,
@@ -334,8 +337,8 @@
                     </div>
                     <div class="procedure-card card-4">
                         <div class="procedure-header">
-                            <div class="heading">Post-Surgery Care</div>
-                            <img src="imgs/icon-4.png" alt="">
+                            <h3 class="heading">Post-Surgery Care</h3>
+                            <img src="imgs/icon-4.png" alt="Post elbow surgery care and recovery management">
                         </div>
 
                         <div class="para">After surgery, the arm may be supported with a sling or brace. Pain control
@@ -356,7 +359,7 @@
                         <path d="M-25 0.5H441" stroke="#E7554C" />
                     </svg> -->
                 </div>
-                <div class="surgery-heading">Understand the Signs</div>
+                <h3 class="surgery-heading">Understand the Signs</h3>
                 <div class="left-line">
                     <!-- <svg xmlns="http://www.w3.org/2000/svg" width="443" height="1"
                         viewBox="0 0 443 1" fill="none">
@@ -365,11 +368,11 @@
                 </div>
             </div>
 
-            <div class="sign-heading">Plan the Right Elbow Treatment</div>
+            <h3 class="sign-heading">Plan the Right Elbow Treatment</h3>
 
 
             <div class="pad">
-                <div class="sign-sub-heading">Common Conditions Treated with Elbow Surgery</div>
+                <h3 class="sign-sub-heading">Common Conditions Treated with Elbow Surgery</h3>
                 <div class="sign-card-part">
                     <div class="sign-cards1" style="margin-top: 20px;">
                         <div class="sign-card">
@@ -383,15 +386,15 @@
                         </div>
 
                         <div class="sign-img-box">
-                            <img src="imgs/signs-img-1.png" alt="">
+                            <img src="imgs/signs-img-1.png" alt="Elbow surgery for tennis elbow and chronic elbow pain">
                         </div>
                     </div>
 
                     <div class="flex1">
-                        <div class="sign-sub-heading">Benefits of Modern Elbow Surgery</div>
+                        <h3 class="sign-sub-heading">Benefits of Modern Elbow Surgery</h3>
                         <div class="sign-cards">
                             <div class="sign-img-box">
-                                <img src="imgs/signs-img-2.png" alt="">
+                                <img src="imgs/signs-img-2.png" alt="Elbow surgery recovery with elbow brace support after ligament repair">
                             </div>
 
                             <div class="sign-card">
@@ -409,7 +412,7 @@
             </div>
 
             <div class="sign-bottom-content">
-                <div class="bottom-heading">How Elbow Surgery Is Performed</div>
+                <h3 class="bottom-heading">How Elbow Surgery Is Performed</h3>
                 <div class="bottom-para">Elbow surgery uses carefully planned techniques based on the condition. The
                     surgeon treats affected elbow structures while preserving healthy tissues, supporting safer
                     procedures and better recovery outcomes.</div>
@@ -449,7 +452,7 @@
             </div>
 
             <div class="choose-img">
-                <img src="imgs/clinic-img.png" alt="">
+                <img src="imgs/clinic-img.png" alt="Elbow surgery clinic in Malleswaram Bangalore - Sapiens Clinic">
             </div>
         </div>
         <app-call-back-form id="contact"></app-call-back-form>
