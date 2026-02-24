@@ -211,22 +211,22 @@ export class HomePage {
 
   performCard = [
     {
-      img: 'imgs/img-1.png',
+      img: '/imgs/Elbow-replacement.jpeg',
       heading: 'Elbow Replacement / Elbow Arthroplasty',
       para: 'Surgical replacement of damaged elbow joint components to reduce pain and improve movement'
     },
     {
-      img: 'imgs/img-2.png',
+      img: '/imgs/Elbow-arthroscopy.jpg',
       heading: 'Elbow Arthroscopy',
       para: 'Minimally invasive elbow surgery used to diagnose and treat elbow joint problems accurately.'
     },
     {
-      img: 'imgs/img-3.png',
+      img: '/imgs/Synovitis-of-elbow.jpeg',
       heading: 'Synovitis of Elbow',
       para: 'Surgical management of inflamed elbow joint lining causing pain and stiffness.'
     },
     {
-      img: 'imgs/img-4.png',
+      img: '/imgs/Ligament-repair.jpeg',
       heading: 'Ligament Repair or Reconstruction of Elbow',
       para: 'Repair or reconstruction of injured elbow ligaments to restore joint stability and function.'
     },
