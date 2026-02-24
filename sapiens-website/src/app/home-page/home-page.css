@@ -824,6 +824,13 @@
     box-shadow: 0 4px 16.6px -2px #835FCD;
 }
 
+.perform-card img {
+    width: 300px;
+    height: 173px;
+    aspect-ratio: 137/79;
+    border-radius: 4px 4px 0 0;
+}
+
 .card-info {
     display: flex;
     flex-direction: column;
@@ -1461,7 +1468,7 @@
         padding: 10px 24px;
     }
 
-    .sub-nav ul li:focus{
+    .sub-nav ul li:focus {
         font-size: 18px;
     }
 
@@ -1544,7 +1551,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 0;
+        gap: 20px;
     }
 
     .surgery-header {
@@ -1661,7 +1668,11 @@
 
     .flex {
         flex-direction: column;
-        gap: 0px;
+        gap: 20px;
+    }
+
+    .list span {
+        font-size: 22px;
     }
 
 
@@ -1867,6 +1878,15 @@
         gap: 8px;
     }
 
+    .symptoms-list {
+        margin-left: 30px;
+        line-height: normal;
+    }
+
+    .symptoms-list li {
+        margin-top: 10px;
+    }
+
     .sub-nav ul li {
         padding: 8px 18px;
     }
@@ -1880,6 +1900,11 @@
         font-size: 14px;
     }
 
+    .sign-heading {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
     .banner-right-side,
     .banner-left-side {
         height: 350px;
@@ -1891,19 +1916,43 @@
         min-width: 36px;
     }
 
+    .surgery-sub-heading {
+        padding: 0;
+    }
+
+    .ml {
+        padding: 10px;
+    }
+
     .nav-arrow svg {
         width: 18px;
         height: 18px;
     }
 
-    .surgery-container {
-        padding: 15px;
-        width: 40%;
+    .sign-sub-heading {
+        font-size: 18px;
+        padding-bottom: 0;
     }
 
+    .surgery-container {
+        padding: 15px;
+        width: 30%;
+    }
+
+    .symptoms-sub-para {
+        line-height: 30px;
+    }
+
+    .q-text {
+        font-size: 16px;
+    }
 
     .surgery-para {
         font-size: 13px;
+    }
+
+    .flex1 {
+        align-items: center;
     }
 
     .arrow-icon {
